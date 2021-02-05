@@ -1,0 +1,19 @@
+$breakpoint: 414px;
+@media (max-width:$breakpoint) {
+  #card{
+    width: 100%;
+    border: solid 1px grey;
+  }
+}
+
+
+.quote {
+  font-style: italic;
+  color:gray;
+}
+
+#card{
+  border:solid 1px grey ;
+  width:30%;
+}
+

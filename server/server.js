@@ -13,7 +13,7 @@ app.use('/',(req,res) =>{
   res.status(200).send(index())
 })
 
-let port = process.env.PORT || 8080
+let port = process.env.PORT || 3000
 app.listen(port,function onStart(err){
   if(err){
     console.log(err)
