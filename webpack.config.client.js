@@ -32,11 +32,18 @@ const config = {
         ]
       },
      { 
-      test: /\.(ttf|eot|svg|gif|jpg|png)(\?[\s\S]+)?$/,
+      test: /\.(ttf|eot|svg|gif|jpg|png|mp3)(\?[\s\S]+)?$/,
       use:[
        "file-loader"
       ]
-    }
+    },
+     {
+      test: /\.mp3$/,
+      loader: 'file-loader',
+      query: {
+        name: 'static/media/[name].[hash:8].[ext]'
+      }
+     }
     ]
   },
   plugins:[

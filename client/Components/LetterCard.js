@@ -38,11 +38,17 @@ export default function LetterCard(props){
   }
 
   return(
-    <div id="card">
-       <h1 className="quote">{par.slice(0,indexing(headedWord(par)))}...</h1>
-       <p>...{par.slice(indexing(headedWord(par)))}</p>
+  <div className="full-card">
+    <div className="full-card-inner">
+     <div className="card">
+        <h1 className="quote">{par.slice(0,indexing(headedWord(par)))}...</h1>
+        <p>...{par.slice(indexing(headedWord(par)))}</p>
+     </div>
+     <div className="card-back">
+       Go to Posts
+     </div>
     </div>
-
+  </div>
   )
 
 }

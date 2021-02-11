@@ -1,0 +1,11 @@
+@keyframes picture{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.picture {
+  animation: picture ease-in 5s;
+  height: 400px;
+  width: 200px;
+  margin : 10px;
+}

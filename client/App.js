@@ -9,6 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia'
 import './App.scss'
 import LetterCard from './Components/LetterCard'
 import HeartBeat from './Components/HeartBeat'
+import PictureCard from './Components/PictureCard'
 
 const str = "This year I had the honour to be a semifinalist at the 2019 Toronto Poetry Slam."
 
