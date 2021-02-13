@@ -1,19 +1,19 @@
 import React, {useState} from 'react'
 import './HeartBeat.scss'
 
-export default function HeartBeat(){
+export default function HeartBeat(props){
   
   const [clickedClass, setClickedClass] = useState("heartbeat")
-
+   
 
   const spinEvent  = event => {
-    console.log("I clicked on spim ")
     setClickedClass("spinner")
+    window.setTimeout(props.pleaseDisappear,2000)
   }
 
   return(
     <div>
-    <div className={`${clickedClass}`} onClick={spinEvent}>{console.log(clickedClass.spin)}</div>
+    <div className={`${clickedClass}`} onClick={spinEvent}></div>
    </div>
   )
 

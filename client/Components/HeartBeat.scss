@@ -16,8 +16,14 @@
         transform:rotate(0deg);
     }
     to {
-        transform:rotate(360deg);
+        transform:rotate(540deg);
     }
+}
+
+@keyframes fade {
+  100% {
+    opacity: 0; 
+  }
 }
 
 
@@ -39,11 +45,11 @@
   width:150px;
   height: 150px;
   border: solid 5px black;
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-name: spin, fade;
+  -webkit-animation-name: spin, fade;
+  -webkit-animation-duration: 2s, 4s;
   position: absolute;
+  animation-duration: 2s, 4s;
   left: 45%;
   top:45%;
 }

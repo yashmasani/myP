@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {hot} from 'react-hot-loader'
 import {makeStyles} from '@material-ui/core/styles'
 import Paper from '@material-ui/core/Paper';
@@ -24,14 +24,19 @@ const useStyles = makeStyles(theme=>({
 
 const App = () =>{
   
+  const [disappear, setDisappear] = useState(false)
   const classes = useStyles()
 
+
+  const pleaseDisappear  = () => {
+    setDisappear(true)
+  }
 
   return (
    <div>
     <Header/>
     <LetterCard text={str} />
-    <HeartBeat/>
+   {!disappear ? <HeartBeat pleaseDisappear={pleaseDisappear}/> : <div></div>}
    </div>
   )
 }

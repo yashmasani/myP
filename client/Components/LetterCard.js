@@ -31,7 +31,6 @@ export default function LetterCard(props){
         index += 1;
       }
       if (index == num){
-        console.log(i)
         return i;
       }
     }
