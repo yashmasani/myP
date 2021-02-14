@@ -7,9 +7,8 @@ import img1 from './assets/images/arlington-research-kN_kViDchA0-unsplash.jpg'
 import img2 from './assets/images/sahan-jayasuriya-Nh6P7SnBL38-unsplash.jpg'
 import CardMedia from '@material-ui/core/CardMedia'
 import './App.scss'
-import LetterCard from './Components/LetterCard'
 import HeartBeat from './Components/HeartBeat'
-import PictureCard from './Components/PictureCard'
+import MainComponent from './Components/MainComponent'
 
 const str = "This year I had the honour to be a semifinalist at the 2019 Toronto Poetry Slam."
 
@@ -34,9 +33,7 @@ const App = () =>{
 
   return (
    <div>
-    <Header/>
-    <LetterCard text={str} />
-   {!disappear ? <HeartBeat pleaseDisappear={pleaseDisappear}/> : <div></div>}
+   {!disappear ? <HeartBeat pleaseDisappear={pleaseDisappear}/> : <MainComponent/>}
    </div>
   )
 }

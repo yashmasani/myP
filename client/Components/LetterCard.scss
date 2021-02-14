@@ -6,10 +6,24 @@ $breakpoint: 414px;
   }
 }
 
+@keyframes slideIn {
+ 0% {
+  opacity: 0;
+  
+ }
+ 100% {
+  opacity:1;
+ }
+
+ 
+}
+
+
 .full-card{
   background-color: transparent;
   width: 30%;
   display: block;
+  animation:slideIn 2s linear;
 }
 
 .icon{

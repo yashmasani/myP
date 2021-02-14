@@ -26,19 +26,21 @@
   }
 }
 
+.central{
+  position: absolute;
+  left: 45%;
+  top:45%;
+}
 
 .heartbeat {
   width:150px;
   height: 150px;
   border-radius: 50%;
-  border: solid 5px black;;
+  border: solid 5px black;
   animation-name: heart;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  position: absolute;
-  left: 45%;
-  top:45%;
 }
 
 .spinner{
@@ -48,8 +50,5 @@
   animation-name: spin, fade;
   -webkit-animation-name: spin, fade;
   -webkit-animation-duration: 2s, 4s;
-  position: absolute;
   animation-duration: 2s, 4s;
-  left: 45%;
-  top:45%;
 }
