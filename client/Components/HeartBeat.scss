@@ -32,6 +32,12 @@
   top:45%;
 }
 
+.header{
+  animation: linear 3s;
+  animation-name: fade;
+}
+
+
 .heartbeat {
   width:150px;
   height: 150px;

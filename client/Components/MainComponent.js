@@ -2,6 +2,8 @@ import React from 'react'
 import Header from './Header';
 import LetterCard from './LetterCard'
 import PictureCard from './PictureCard'
+import Chapstick from './Chapstick'
+import './MainComponent.scss'
 
 export default function MainComponent(){
  
@@ -10,8 +12,11 @@ export default function MainComponent(){
  return (
     <div>
       <Header/>
-      <PictureCard/>
-      <LetterCard text={str} />
+      <div className="cardContainer">
+        <LetterCard text={str} />
+        <PictureCard/>
+        <Chapstick/>
+      </div>
     </div>
  )
 
