@@ -4,7 +4,7 @@ export default function Chapstick(){
 
   return (
     
-  <div className="full-card">
+  <div className="full-card" style={{height:"100px"}}>
     <div className="full-card-inner">
      <div className="card">
      Buy my Chapstick

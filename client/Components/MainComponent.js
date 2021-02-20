@@ -12,12 +12,14 @@ export default function MainComponent(){
  return (
     <div>
       <Header/>
-      <div className="cardContainer">
-        <LetterCard text={str} />
+      <div className="pictureContainer">
+        <div className="cardContainer">
+          <LetterCard text={str} />
+          <Chapstick/>
+        </div>
         <PictureCard/>
-        <Chapstick/>
       </div>
-    </div>
+  </div>
  )
 
 }
