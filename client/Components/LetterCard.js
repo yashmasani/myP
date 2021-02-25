@@ -37,7 +37,7 @@ export default function LetterCard(props){
   }
 
   return(
-  <div className="full-card">
+  <div className="full-card" style={{height: "300px"}}>
     <div className="full-card-inner">
      <div className="card">
         <h1 className="quote">{par.slice(0,indexing(headedWord(par)))}...</h1>

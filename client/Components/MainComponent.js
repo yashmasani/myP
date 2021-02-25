@@ -11,7 +11,6 @@ export default function MainComponent(){
  
  return (
     <div>
-      <Header/>
       <div className="pictureContainer">
         <div className="cardContainer">
           <LetterCard text={str} />

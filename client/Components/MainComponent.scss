@@ -2,11 +2,12 @@
   display:flex;
   flex-wrap: wrap;
   flex-direction:column;
-  background-color: blue;
   width:50%;
 }
 
 .pictureContainer{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  position:relative;
+  left:15%;
 }
