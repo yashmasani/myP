@@ -1,3 +1,18 @@
+@import "LetterCard.scss";
+@media (max-width:$breakpoint){
+  div #picCard{
+    height:200px;
+    width:100%;
+  }
+  div #picture{
+    width: 400px;
+  }
+
+  div #innerpicCard{
+    width:100%;
+  }
+}
+
 @keyframes picture{
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -8,4 +23,12 @@
   height: 100%;
   width:100%;
   flex:1;
+}
+
+#picCard{
+  height: 400px;
+  width: 50%;
+}
+#innerpicCard{
+  width: 50%;
 }

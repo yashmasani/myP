@@ -1,23 +1,23 @@
 
 @import "./LetterCard.scss";
 
-@media only screen and (max-width:$breakpoint){
+@media only screen and (max-width:500px){
 
-  div .cardContainer{
+  .cardContainer{
     width:100%; 
-    justify-content: center;
-    background-color:blue;
-    z-index:99;
-
   }
 
-  div .pictureContainer{
+  .pictureContainer{
     position:relative; 
-    left:0%;
+    left:-20%;
     width:100%;
     flex-direction: column;
     background:red;
     margin:0;
+  }
+  .bd{
+    position: relative;
+    left: -10%;
   }
 
 }

@@ -1,9 +1,14 @@
-$breakpoint: 414px;
+$breakpoint: 500px;
 @media (max-width:$breakpoint) {
-  .card{
+  .full-card{
     width: 100%;
     border: solid 1px grey;
+    display: block;
   }
+  .full-card-inner{
+    width:100%;
+  }
+
 }
 
 @keyframes slideIn {
@@ -58,7 +63,7 @@ $breakpoint: 414px;
   
 }
 
-.full-card:hover .full-card-inner{
+.full-card:hover .full-card-inner,.full-card:active .full-card-inner{
   transform: rotateY(180deg);
   transition: transform 0.5s;
 }
@@ -72,4 +77,16 @@ $breakpoint: 414px;
   transform: rotateY(180deg);
   background-color: grey;
   backface-visibility: hidden;
+}
+
+
+.pic-Card{
+ @extend .full-card;
+  height: "400px";
+  width: 50%;
+}
+
+.pic-Card-inner{
+  @extend .pic-Card-inner;
+  width: 50%;
 }

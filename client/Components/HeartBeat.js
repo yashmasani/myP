@@ -14,7 +14,7 @@ export default function HeartBeat(props){
 
   return(
    <div>
-    <h1 className={`${fadeClass}`} style={{top:"25%", left:"43%"}}>Unfold My Story</h1>
+    <h1 className={`${fadeClass}`} id="titleQuote">Unfold My Story</h1>
     <div className={`${clickedClass}`} onClick={spinEvent}></div>
    </div>
   )
