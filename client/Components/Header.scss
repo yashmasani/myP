@@ -1,21 +1,49 @@
 @import "./LetterCard.scss";
 
 @media (max-width:$breakpoint) {
-  li{
-    font-size: 0.1em;
-    margin:0.1rem;
-    display:block;
+  ul > li{
+    font-size: 2em;
+    margin:0.5rem;
+    color:white;
   }
-  nav {
+  div > nav {
    width:100%;
-   padding:0.5%;
-   display:None;
+   top: 0;
   }
 
   nav ul{
     margin-top: 0;
     width:100%;
     flex-direction: column;
+  }
+  
+  div > .logo{
+   height:100px;
+   width:100px;
+  }
+
+  .overlay{
+    height:120%;
+    width:140%;
+    position:fixed;
+    left:-2%;
+    background-color: rgba(0,0,0,0.9);
+    overflow-x: hidden;
+    z-index: 100;
+    margin: 0;
+    padding:0;
+  }
+
+  .not-overlay{
+    display: none;
+  }
+  
+  nav>span{
+    background-color: white;
+    font-size:2.5em;
+    position:absolute;
+    left: 60%;
+
   }
 
 }
@@ -33,7 +61,6 @@ ul {
 li {
   margin: 3rem;
   font-size: 1.5em;;
-  flex-shrink:3;
 }
 
 li:hover, li:active{

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Header.scss'
 import {NavLink} from 'react-router-dom'
 import circle from '../assets/images/Circle_-_black_simple.svg'
@@ -6,12 +6,25 @@ import circle from '../assets/images/Circle_-_black_simple.svg'
 
 export default function Header (){     
       
- 
+  const [isClicked,setIsClick] = useState(false)
+  const [cssClass, setCssClass] = useState("not-overlay")
+
+
+ const clicked = event => {
+    console.log("I was clicked")
+    //setIsClick(!isClicked)
+    setCssClass("overlay")
+ } 
+
+ const close =event => {
+    setCssClass("not-overlay")
+ }
 
   return(
   <div>
-   <img src={circle} className="logo"/>
-   <nav>
+   <img src={circle} className="logo" onClick={clicked}/>
+   <nav className={`${cssClass}`} >
+     <span onClick={close}>X</span>
      <ul>
        <li><NavLink to="/about" activeClassName="selected">About</NavLink></li>
        <li><NavLink to="/Poems" activeClassName="selected">Poems</NavLink></li>
