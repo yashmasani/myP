@@ -1,0 +1,60 @@
+@import "./LetterCard.scss";
+@media only screen and (max-width:$breakpoint){
+   
+div> .arrow{
+  border: solid black;
+  border-width: 0px 20px 20px 0px;
+  display: inline-block;
+  padding: 20px;
+ }
+
+div> .left{
+  margin-left : 20px;
+}
+
+div> .right{
+  margin-right : 20px;
+}
+
+
+}
+
+
+div > .strip{
+  height:200px;
+  width:100%;
+  background-color: #AF808B;
+  margin-top:100px;
+  text-align: center;
+}
+.arrow{
+  border: solid black;
+  border-width: 0px 45px 45px 0px;
+  display: inline-block;
+  padding: 45px;
+
+}
+
+.arrow:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#left {
+  transform: rotate(135eg);
+  -webkit-transform: rotate(135deg);
+  float: left;
+  margin-left: 30px
+}
+#right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  float:right;
+  margin-right: 30px
+
+}
+
+
+
+
+

@@ -6,7 +6,6 @@
   div .cardContainer{
     width:100%; 
     justify-content: center;
-    background-color:blue;
     z-index:99;
 
   }
@@ -16,12 +15,14 @@
     left:0%;
     width:100%;
     flex-direction: column;
-    background:red;
-    margin:0;
+    margin-top: 100px;
   }
 
 }
 
+.bd{
+  text-align: center;
+}
 .cardContainer{
   display:flex;
   flex-wrap: wrap;
@@ -32,6 +33,7 @@
 .pictureContainer{
   display: flex;
   justify-content: center;
+  margin-top:100px;
   position:relative;
   left:15%;
 }

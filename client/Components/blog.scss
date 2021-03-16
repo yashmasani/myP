@@ -1,0 +1,34 @@
+@import "./LetterCard.scss";
+
+@media only screen and (max-width:$breakpoint)
+{
+  div > .blog{
+    height: 100px;
+  }
+
+}
+
+
+
+.blog{
+  margin: 50px;
+  background-color: white;;
+}
+
+.blogImageL{
+  float:left;
+  margin:10px;
+  display: block;
+}
+
+.blogImageR{
+  float:right;
+  margin:10px;
+  display:inline; 
+}
+
+.blog > p{
+  line-height: 200%;;
+}
+
+

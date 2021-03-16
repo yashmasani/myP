@@ -21,8 +21,9 @@ export default function Header (){
  }
 
   return(
-  <div>
+  <div class="top">
    <img src={circle} className="logo" onClick={clicked}/>
+   <span>Lamia's Blog</span>
    <nav className={`${cssClass}`} >
      <span onClick={close}>X</span>
      <ul>

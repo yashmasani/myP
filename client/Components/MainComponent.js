@@ -4,6 +4,8 @@ import LetterCard from './LetterCard'
 import PictureCard from './PictureCard'
 import Chapstick from './Chapstick'
 import './MainComponent.scss'
+import Blog from "./blog"
+import Strip from "./strip"
 
 export default function MainComponent(){
  
@@ -18,6 +20,8 @@ export default function MainComponent(){
         </div>
         <PictureCard/>
       </div>
+      <Strip/>
+      <Blog/>
   </div>
  )
 
